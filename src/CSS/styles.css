@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* CSS variables */
 :root {
     --navbar-height: 70px;
@@ -163,7 +167,7 @@
 /* Contact section */
 #contact {
     position: relative;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 #contact::before {
@@ -235,4 +239,170 @@ footer {
 
 .center {
     text-align: center;
+}
+
+@media only screen and (min-width: 512px) and (max-width: 1026px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        font-size: 1.2rem;
+      }
+
+    .h-primary {
+        font-size: 2.2rem;
+    }
+    
+    .h-secondary {
+        font-size: 1.2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    #text-black-box {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+    
+    /* Services section */
+    #services-items {
+        flex-direction: column;
+    }
+    
+    /* Clients section */
+    #clients {
+        overflow: hidden;
+    }
+
+    #clients img {
+        height: 3rem;
+    }
+
+    .client-item {
+        padding: 1rem;
+    }
+
+    #client-section::before {
+        height: 35%;
+    }
+
+
+
+
+    #contact-box form {
+        width: 65%;
+    }
+
+    #contact-box label {
+        font-size: 1.1rem;
+        font-family: 'Baloo Bhai 2';
+    }
+
+    #contact-box input, #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        font-size: 1.2rem;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar::before {
+        height: 100%;
+    }
+
+    .h-primary {
+        font-size: 2.2rem;
+    }
+    
+    .h-secondary {
+        font-size: 1.2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    #home::before {
+        height: 780px;
+    }
+
+    #text-black-box {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.6rem;
+    }
+
+    /* Services section */
+    #services-items {
+        flex-direction: column;
+    }
+    
+    /* Clients section */
+    #clients {
+        overflow: hidden;
+    }
+    
+    #clients img {
+        height: 3rem;
+    }
+
+    #client-section::before {
+        height: 35%;
+    }
+    
+    .client-item {
+        padding: 1rem;
+    }
+
+
+
+    #contact-box form {
+        width: 65%;
+    }
+
+    #contact-box label {
+        font-size: 1.1rem;
+        font-family: 'Baloo Bhai 2';
+    }
+
+    #contact-box input, #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+
+    .footer-text {
+        font-size: 0.5rem;
+    }
 }

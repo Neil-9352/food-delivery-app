@@ -1,0 +1,14 @@
+/* Navbar */
+.navbar {
+    flex-direction: column;
+}
+
+/* Services section */
+#service-items {
+    flex-direction: column;
+}
+
+/* Clients section */
+#clients {
+    overflow: hidden;
+}
