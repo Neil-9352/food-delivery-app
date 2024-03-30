@@ -1,0 +1,231 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 70px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    position: sticky;
+    top: 0px;
+}
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navbar logo */
+.logo {
+    margin: 4px 20px;
+}
+
+.logo img {
+    height: 56px;
+    margin: 3px 5px;
+}
+
+/* Navbar list items */
+.navbar ul {
+    display: flex;
+    font-family: 'Montserrat Alternates';
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: Black;
+
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 688px;
+}
+
+#home::before {
+    content: "";
+    background:url("../media/Backgrounds/bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 710.4px;
+    width: 100%;
+    z-index: -1;
+    opacity: 80%;
+}
+
+#home h1 {
+    text-align: center;
+    color: black;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat Alternates';
+}
+
+/* Services section */
+#services-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 34px;
+}
+
+#services-items .box {
+    flex: 1;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#services-items .box img  {
+    display: block;
+    height: 120px;
+    margin: auto;
+}
+
+#services-items .box p {
+    font-family: 'Montserrat Alternates';
+}
+
+/* Clients section */
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    background: url('../media/Backgrounds/clients.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 53%;
+    z-index: -1;
+    opacity: 80%;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 8rem;
+}
+
+.client-item {
+    padding: 4rem;
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+    margin-top: 5rem;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 80%;
+    background: url("../media/Backgrounds/contact.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2';
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility classes */
+.h-primary {
+    font-size: 3.8rem;
+    font-family: 'Baloo Bhai 2';
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Baloo Bhai 2';
+    font-size: 2.2rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #561e07;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
